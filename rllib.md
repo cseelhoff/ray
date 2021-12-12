@@ -7,3 +7,7 @@ cd ray
 git remote add upstream https://github.com/ray-project/ray.git
 
 python3 python/ray/setup-dev.py
+
+pip install gputil
+
+python3 ~/ray/rllib/examples/unity3d_env_local.py --env Walker --file-name /mnt/c/users/caleb/source/repos/TruePhysicsFootball/builds/sdmono/football.x86_64
