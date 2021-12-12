@@ -269,7 +269,7 @@ class Unity3DEnv(MultiAgentEnv):
             # VisualHallway.
             "VisualHallway": Box(float("-inf"), float("inf"), (84, 84, 3)),
             # Walker.
-            "Walker": Box(float("-inf"), float("inf"), (212, )),
+            "Walker": Box(float("-inf"), float("inf"), (307, )),
             # FoodCollector.
             "FoodCollector": TupleSpace([
                 Box(float("-inf"), float("inf"), (49, )),
@@ -297,7 +297,7 @@ class Unity3DEnv(MultiAgentEnv):
             # VisualHallway.
             "VisualHallway": MultiDiscrete([5]),
             # Walker.
-            "Walker": Box(float("-inf"), float("inf"), (39, )),
+            "Walker": Box(float("-inf"), float("inf"), (46, )),
             # FoodCollector.
             "FoodCollector": MultiDiscrete([3, 3, 3, 2]),
         }
