@@ -5,7 +5,7 @@ sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda
 sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 sudo apt update
 sudo apt upgrade
-sudo apt install python3-pip build-essential nvidia-cuda-toolkit cuda
+sudo apt install python3-pip build-essential nvidia-cuda-toolkit cuda libcudnn8
 
 #https://developer.nvidia.com/rdp/cudnn-download
 
