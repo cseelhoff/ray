@@ -22,6 +22,8 @@ python3 python/ray/setup-dev.py
 
 pip install gputil
 vi ray/rllib/env/wrappers/unity3d_env.py #change box to 1,1,46
-vi ~/ray/rllib/examples/unity3d_env_local.py
-python3 ~/ray/rllib/examples/unity3d_env_local.py --env Walker --file-name sdm307-46/football1.x86_64 --num-workers=8
+#vi ~/ray/rllib/examples/unity3d_env_local.py
+vi ~/ray/rllib/examples/serving/unity3d_server.py
+#python3 ~/ray/rllib/examples/unity3d_env_local.py --env Walker --file-name sdm307-46/football1.x86_64 --num-workers=8
+python3 ~/ray/rllib/examples/serving/unity3d_server.py --run PPO --framework torch --num-workers 2 --env Walker --no-restore
 ```
