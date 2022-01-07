@@ -9,9 +9,8 @@ sudo apt install python3-pip build-essential nvidia-cuda-toolkit cuda libcudnn8
 sudo systemctl start nvidia-persistenced
 
 #https://developer.nvidia.com/rdp/cudnn-download
-wget https://developer.download.nvidia.com/compute/cudnn/secure/8.3.1/local_installers/11.5/cudnn-local-repo-ubuntu2004-8.3.1.22_1.0-1_amd64.deb?Dh_n_g-ug9FcaD4_nk98Mton7A9iwT4xN_PfVSyJmRZjGtgA797ugiKd4OEi9h15AtIEmFIlfQZ40kopUdN6etIiFx1UQ1rXqcRzl9Da57Mp18xiekXafeEQLyIKfPdLmcZ7EkWMA4N8tfdcvI1A94xwuDMdpnX2UdAeg1FRtvTApvHUP1_lYaOC94RjHWGc7Mp4kbw1xgspe4hiBePLJ-_zB5Y&t=eyJscyI6ImdzZW8iLCJsc2QiOiJodHRwczpcL1wvd3d3Lmdvb2dsZS5jb21cLyJ9 -O cudnn.deb
 
-dpkg -i cudnn.deb
+sudo dpkg -i cudnn.deb
 
 pip install ray[rllib] tensorflow-gpu mlagents==0.27.0 attrs==20.1.0 cattrs==1.5.0 torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
